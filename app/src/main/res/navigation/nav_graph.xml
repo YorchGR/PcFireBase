@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.jorgelopezendrina.pcfirebase.view.Inicio"
+        android:label="fg_inicio"
+        tools:layout="@layout/fg_inicio" >
+        <action
+            android:id="@+id/ac_inicio_to_listaElementos"
+            app:destination="@id/listaElementos" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaElementos"
+        android:name="com.jorgelopezendrina.pcfirebase.view.ListaElementos"
+        android:label="fg_lista_elementos"
+        tools:layout="@layout/fg_lista_elementos" >
+        <action
+            android:id="@+id/ac_listaElementos_to_verInformatico"
+            app:destination="@id/verInformatico" />
+        <action
+            android:id="@+id/ac_listaElementos_to_verOrdenador"
+            app:destination="@id/verOrdenador" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.jorgelopezendrina.pcfirebase.view.Login"
+        android:label="fg_login"
+        tools:layout="@layout/fg_login" >
+        <action
+            android:id="@+id/ac_login_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/verOrdenador"
+        android:name="com.jorgelopezendrina.pcfirebase.view.VerOrdenador"
+        android:label="fg_ver_ordenador"
+        tools:layout="@layout/fg_ver_ordenador" >
+        <action
+            android:id="@+id/ac_verOrdenador_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/verInformatico"
+        android:name="com.jorgelopezendrina.pcfirebase.view.VerInformatico"
+        android:label="fragment_ver_informatico"
+        tools:layout="@layout/fg_ver_informatico" >
+        <action
+            android:id="@+id/ac_verInformatico_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+</navigation>

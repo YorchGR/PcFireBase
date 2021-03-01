@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.VerInformatico">
+
+
+    <ImageView
+        android:id="@+id/imageViewInformatico"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/img"
+        android:src="@drawable/recurso_1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="160dp" />
+
+    <TextView
+        android:id="@+id/tvNombreINfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etNombreInfor"
+        app:layout_constraintEnd_toStartOf="@+id/etNombreInfor"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etNombreInfor"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/tvApInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apellido"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etApellidoInfor"
+        app:layout_constraintStart_toStartOf="@+id/tvNombreINfor"
+        app:layout_constraintTop_toTopOf="@+id/etApellidoInfor"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/tvDniInfor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dni"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etDniInfor"
+        app:layout_constraintStart_toStartOf="@+id/tvApInfor"
+        app:layout_constraintTop_toTopOf="@+id/etDniInfor" />
+
+    <TextView
+        android:id="@+id/tvTlfInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TLF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTlfInfor"
+        app:layout_constraintStart_toStartOf="@+id/tvDniInfor2"
+        app:layout_constraintTop_toTopOf="@+id/etTlfInfor" />
+
+    <Button
+        android:id="@+id/btActualizarInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBorrarInfor"
+        app:layout_constraintTop_toBottomOf="@+id/etImgInfor" />
+
+    <EditText
+        android:id="@+id/etNombreInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/etApellidoInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreInfor"
+        app:layout_constraintStart_toStartOf="@+id/etNombreInfor"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreInfor" />
+
+    <EditText
+        android:id="@+id/etDniInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etApellidoInfor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etApellidoInfor"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidoInfor" />
+
+    <EditText
+        android:id="@+id/etTlfInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etDniInfor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDniInfor"
+        app:layout_constraintTop_toBottomOf="@+id/etDniInfor" />
+
+    <Button
+        android:id="@+id/btBorrarInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btActualizarInfor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etImgInfor" />
+
+    <Button
+        android:id="@+id/btCrearInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aniadir"
+        app:layout_constraintBottom_toBottomOf="@+id/btBorrarInfor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btBorrarInfor" />
+
+    <EditText
+        android:id="@+id/etImgInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etTlfInfor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTlfInfor"
+        app:layout_constraintTop_toBottomOf="@+id/etTlfInfor" />
+
+    <TextView
+        android:id="@+id/tvUrlInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/urlimgen"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etImgInfor"
+        app:layout_constraintStart_toStartOf="@+id/tvTlfInfor"
+        app:layout_constraintTop_toTopOf="@+id/etImgInfor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

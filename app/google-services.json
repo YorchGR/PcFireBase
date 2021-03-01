@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "197003100041",
+    "project_id": "pcsincomponentes-d27f3",
+    "storage_bucket": "pcsincomponentes-d27f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197003100041:android:521f38ddc4a5132ce9eb58",
+        "android_client_info": {
+          "package_name": "com.jorgelopezendrina.pcfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE-855y4IzpVpMyv4YpjS09y_zCf7TAXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197003100041:android:27355a25b98fff5be9eb58",
+        "android_client_info": {
+          "package_name": "com.jorgelopezendrina.pcsincomponentes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE-855y4IzpVpMyv4YpjS09y_zCf7TAXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197003100041:android:e030c2c9b5ce2ba0e9eb58",
+        "android_client_info": {
+          "package_name": "com.jorgelopezendrina.pcsincomponentesfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE-855y4IzpVpMyv4YpjS09y_zCf7TAXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197003100041-e400eh2vo6apcpmh1dm9t2tsli5h8dai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
